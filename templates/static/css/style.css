@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor-menu: #8A8A9A;
+    --cor-botao-padrao: var(--cor-menu);
+    --cor-botao-padrao-hover: #99A3A4;
+    --cor-hr: var(--cor-menu);
+    --cor-titulo: #4d4b4b;
+    --cor-input-cadastrar: #C4C4C4
+}
+
+hr {
+    border-top: 0.125rem solid var(--cor-hr) !important;
+}
+
+.nav-link {
+    color: white !important;
+    text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.sidebar {
+    background-color: var(--cor-menu);
+    height: 100vh;
+}
+
+.cor_branca {
+    color: white;
+}
+
+.logo_sidebar {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.img_logo_sidebar {
+    width: 4.375rem;
+}
+
+.logo {
+    font-size: 4.375rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.corpo_sidebar {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 0.125rem solid var(--cor-titulo);
+    display: inline;
+}
+
+.descricao {
+    font-size: 1.5rem;
+}
+
+.btn_logar {
+    font-size: 1.875rem !important;
+}
+
+.area_cadastrar {
+    text-align: center;
+}
+
+.titulo_area_cadastrar {
+    font-size: 2.5rem;
+    color: var(--cor-menu);
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+.input_cadastrar {
+    width: 60%;
+    border: none;
+    background-color: var(--cor-input-cadastrar);
+    padding: 0.5rem;
+    outline: 0;
+    font-size: 1rem;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 0.5rem;
+    padding-left: 3.5rem;
+}
+
+.input_cadastrar_nome {
+    background-image: url('/static/autenticacao/img/user.png');
+}
+
+.input_cadastrar_email {
+    background-image: url('/static/autenticacao/img/email.png');
+}
+
+.input_cadastrar_senha {
+    background-image: url('/static/autenticacao/img/senha.png');
+}
+
+.btn_cadastrar {
+    font-size: 1.875rem !important;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.bg_navbar {
+    background-color: var(--cor-menu) !important;
+}
+
+.fundo_botoes_padrao {
+    border: none !important;
+    color: white !important;
+    background-color: var(--cor-botao-padrao) !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.fundo_botoes_padrao:hover {
+    border: none !important;
+    color: white !important;
+    background-color: var(--cor-botao-padrao-hover) !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.font_logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5625rem;
+    display: inline;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.card_imovel {
+    width: 16.5rem;
+    background-color: var(--cor-menu) !important;
+    border-radius: 1.625rem;
+}
+
+.img_capa_imovel {
+    width: 100%;
+    border-top-left-radius: 1.625rem;
+    border-top-right-radius: 1.625rem;
+}
+
+.informacoes_imoveis {
+    padding: 1.25rem;
+    color: white;
+}
+
+
+.valor {
+    font-weight: bold;
+    border-bottom: 0.0625rem solid white;
+}
+
+.titulo_filtrar {
+    color: var(--cor-menu);
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.a_none {
+    color: white;
+}
+
+.a_none:hover {
+    text-decoration: none;
+    color: var(--cor-titulo);
+}
+
+.titulo_especificacao {
+    color: var(--cor-menu);
+    font-weight: bold;
+    margin-top: 1.25rem;
+    font-size: 2.5rem;
+}
+
+.especificacao {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.especificacao_endereco {
+    font-size: 1.5625rem;
+}
+
+.div_possivel_interesse {
+    text-align: left;
+}
+
+.rodape {
+    color: white;
+    background-color: var(--cor-titulo);
+}
+
+.cor_icones_rodape {
+    color: white;
+}
+
+.sombra {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sombra_texto {
+    text-shadow: black 0.1em 0.1em 0.2em
+}

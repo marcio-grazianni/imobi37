@@ -1,0 +1,67 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    {% block 'head' %}{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <title>{% block 'titulo' %}{% endblock %}</title>
+</head>
+
+<body>
+    {% if user.is_authenticated %}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg_navbar">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img class="rounded-circle" width="40" src="{% static 'autenticacao/img/logo.jpg' %}">
+                &nbsp<h3 class="font_logo">IMOBI</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'agendamentos' %}">Agendamentos</a>
+                    </li>
+                </ul>
+                <div class="ml-auto">
+                    <a class="btn btn-outline-light" href="{% url 'sair' %}">Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    {% endif %}
+
+    {% block 'body' %}{% endblock %}
+
+    <footer>
+        <div class="container-fluid mt-3 pt-4 pb-4 rodape">
+            <div class="row">
+                <div class="col-sm-12 col-md-5 d-flex justify-content-center">
+                    <div class="sombra_texto">Copyright © 2022 Todos os direitos reservados</div>
+                </div>
+                <div class="col-sm-12 col-md-5 d-flex justify-content-center">
+                    <div class="sombra_texto">Este template foi criado por <strong>Marcio Grazianni</strong></div>
+                </div>
+                <div class="col-sm-12 col-md-2 d-flex justify-content-center">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook mr-3 cor_icones_rodape"></i></a>
+                    <a href="javascript:alert('Instagram');"><i class="bi bi-instagram mr-3 cor_icones_rodape"></i></a>
+                    <a href="javascript:alert('Twitter');"><i class="bi bi-twitter mr-3 cor_icones_rodape"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
